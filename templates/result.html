@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container">
+            <h5 class="text-white">Blood Bank - Doner's List</h5>
+            <a class="navbar-brand" href="#">
+                {#                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">#}
+            </a>
+        </div>
+    </nav>
+    <div class="container mt-3">
+
+        <table class="table table-danger table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Student Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Blood Group</th>
+                <th scope="col">Mobile Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in result %}
+                <tr>
+                    <td>{{ i.student_name }}</td>
+                    <td>{{ i.department }}</td>
+                    <td>{{ i.blood_group }}</td>
+                    <td>{{ i.mobile_number }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+
+{% endblock %}

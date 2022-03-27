@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section>
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container">
+                <h5 class="text-white">BLOOD BANK - REGISTERATION</h5>
+                <a class="navbar-brand" href="#">
+{#                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">#}
+                </a>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <h1 class="text-center display-3 p-5"><b>DONOR REGISTERATION</b></h1>
+            <form action="result">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label" >Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="list" class="form-label">Select Blood Group</label>
+                            <select id="list" class="form-select" aria-label="Default select example" name="blood_group">
+                                <option selected>select Blood Group</option>
+                                <option value="A+ve">A+ve</option>
+                                <option value="A-ve">A-ve</option>
+                                <option value="B+ve">B+ve</option>
+                                <option value="B-ve">B-ve</option>
+                                <option value="O+ve">O+ve</option>
+                                <option value="O-ve">O-ve</option>
+                                <option value="AB+ve">AB+ve</option>
+                                <option value="AB-ve">AB-ve</option>
+                                <option value="I Don't Know Blood Group!">I Don't Know Blood Group!</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Department</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="department" name="department">
+                        </div>
+                        <div>
+                            <label for="mobile_number" class="form-label">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobile_number" placeholder="Enter Mobile Number" name="mobile_number">
+                        </div>
+                        <div class='row my-3'>
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6 text-center">
+                                <button type="submit" class="btn btn-danger">Submit</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+{#                    <div class="row mx-auto my-2">#}
+{##}
+{#                        <button type="" href="list.html" class="btn btn-success col-sm-3 mx-auto my-2">Doner's List</button>#}
+{#                    </div>#}
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+{% endblock %}
