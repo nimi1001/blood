@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'login.html')
 
 
 def result(request):
@@ -43,3 +43,7 @@ def result(request):
 
     print(student_arr)
     return render(request, 'result.html', {"result": student_arr})
+
+
+def register(request):
+    return render(request, 'index.html')
