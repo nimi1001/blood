@@ -1,0 +1,10 @@
+import pymongo
+
+# dnspython
+# filename not be a pymongo
+cluster = pymongo.MongoClient(
+    "mongodb+srv://nimi:12345@blood2022.zluxn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+db = cluster['people']
+collection = db['pepo']
+
+collection.insert_one({"name": "nirmal"})
